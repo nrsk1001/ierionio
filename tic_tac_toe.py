@@ -25,8 +25,17 @@ turtle.setx(-300)
 turtle.sety(100)
 turtle.setx(300)
 turtle.sety(100)
+
 b=0
 a=[[0,0,0],[0,0,0],[0,0,0]]
+
+"""
+TODO: 코드 순서 수정(아래의 순서로 바꿀 것)
+1. ax, ay 결정
+2. 해당 자리가 비어있는지 확인
+    2-1. 비어있는 경우: turn에 따라 OX 표시 -> turn 증가시킴
+    2-2. 비어있지 않은 경우: 작업 수행 하지 않음
+"""
 def play(x, y):
     global b
     turtle.penup()
